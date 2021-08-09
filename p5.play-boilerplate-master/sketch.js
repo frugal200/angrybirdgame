@@ -8,6 +8,7 @@ var pig1,pig2;
 var log1,log2,log3,log4;
 var bird;
 var bgImg;
+var platform;
 
 
 
@@ -38,6 +39,8 @@ function setup() {
  log4=new Log(870,120,150,-PI/7);
 
  bird=new Bird(50,50);
+
+ platform=new Ground(150,305,300,170)
 }
 
 function draw() {
@@ -56,6 +59,7 @@ function draw() {
   log3.display();
   log4.display();
   bird.display();
+  platform.display();
 
 
 
